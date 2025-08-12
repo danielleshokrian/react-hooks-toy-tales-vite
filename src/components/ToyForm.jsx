@@ -15,19 +15,20 @@ function ToyForm({ onAddToy }) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h3>Create New Toy</h3>
       <input
         type="text"
-        placeholder="Toy Name"
+        placeholder="Enter a toy's name..."
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Image URL"
+        placeholder="Enter a toy's image URL..."
         value={image}
         onChange={(e) => setImage(e.target.value)}
       />
-      <button type="submit">Add Toy</button>
+      <button type="submit">Add a Toy</button>
     </form>
   );
 }
